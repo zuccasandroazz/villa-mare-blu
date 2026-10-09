@@ -26,8 +26,13 @@
   .hamburger span{width:26px;height:2px;background:var(--white);transition:.3s}
   nav.scrolled .hamburger span{background:var(--sea-deep)}
   .hero{height:100vh;min-height:640px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--white);overflow:hidden}
-  .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,46,61,.6) 0%,rgba(27,73,101,.4) 50%,rgba(231,111,81,.25) 100%);z-index:1}
-  .hero-bg{position:absolute;inset:0;background-image:url('images/piano-terra/hero.avif');background-size:cover;background-position:center;animation:kenburns 25s ease-in-out infinite alternate}
+  .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,46,61,.7) 0%,rgba(27,73,101,.5) 50%,rgba(231,111,81,.25) 100%);z-index:1}
+  .hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;animation:heroFade 20s infinite}
+  .hero-bg:first-of-type{opacity:1;animation:heroFade 20s infinite, kenburns 25s ease-in-out infinite alternate}
+  .hero-bg-2{animation-delay:5s}
+  .hero-bg-3{animation-delay:10s}
+  .hero-bg-4{animation-delay:15s}
+  @keyframes heroFade{0%,20%{opacity:1}25%,95%{opacity:0}100%{opacity:1}}
   @keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.12)}}
   .hero-content{position:relative;z-index:2;max-width:920px;padding:0 24px;animation:fadeUp 1.2s ease .2s both}
   @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
@@ -257,7 +262,10 @@
 </nav>
 
 <header class="hero">
-  <div class="hero-bg"></div>
+  <div class="hero-bg" style="background-image:url('images/hero.avif')"></div>
+  <div class="hero-bg hero-bg-2" style="background-image:url('images/piano-terra/soggiorno.avif')"></div>
+  <div class="hero-bg hero-bg-3" style="background-image:url('images/primo-piano/soggiorno.avif')"></div>
+  <div class="hero-bg hero-bg-4" style="background-image:url('images/piano-terra/balcone.avif')"></div>
   <div class="hero-content">
     <div class="hero-badge">Sinis - Sardegna - a 100 metri dal mare</div>
     <h1>La tua casa al mare<br>a <em>Mandriola</em></h1>
