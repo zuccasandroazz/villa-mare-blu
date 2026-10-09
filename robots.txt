@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://villa-mare-blu.vercel.app/sitemap.xml
