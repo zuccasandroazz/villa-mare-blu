@@ -27,7 +27,7 @@
   nav.scrolled .hamburger span{background:var(--sea-deep)}
   .hero{height:100vh;min-height:640px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--white);overflow:hidden}
   .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,46,61,.55) 0%,rgba(27,73,101,.35) 50%,rgba(231,111,81,.25) 100%);z-index:1}
-  .hero-bg{position:absolute;inset:0;background-image:url('images/hero.avif');background-size:cover;background-position:center;animation:kenburns 25s ease-in-out infinite alternate}
+  .hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80');background-size:cover;background-position:center;animation:kenburns 25s ease-in-out infinite alternate}
   @keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.12)}}
   .hero-content{position:relative;z-index:2;max-width:900px;padding:0 24px;animation:fadeUp 1.2s ease .2s both}
   @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
@@ -58,8 +58,8 @@
   .stat-label{font-size:.85rem;color:var(--muted);margin-top:6px;letter-spacing:.5px}
   .about-images{position:relative;height:560px}
   .about-img{position:absolute;border-radius:16px;box-shadow:0 30px 60px rgba(10,46,61,.18);background-size:cover;background-position:center}
-  .about-img-1{width:75%;height:70%;top:0;left:0;background-image:url('images/about-1.avif')}
-  .about-img-2{width:60%;height:55%;bottom:0;right:0;background-image:url('images/about-2.avif');border:6px solid var(--cream)}
+  .about-img-1{width:75%;height:70%;top:0;left:0;background-image:url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80')}
+  .about-img-2{width:60%;height:55%;bottom:0;right:0;background-image:url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80');border:6px solid var(--cream)}
   .features{background:var(--sand)}
   .features-header{text-align:center;margin-bottom:60px}
   .features-header .section-subtitle{margin:0 auto}
@@ -166,8 +166,6 @@
     .footer-bottom{flex-direction:column;text-align:center}
     .gallery-grid{grid-auto-rows:140px;gap:10px}
   }
-  .gallery-caption{position:absolute;bottom:16px;left:16px;right:16px;color:#fff;font-size:.85rem;font-weight:500;letter-spacing:.5px;opacity:0;transform:translateY(8px);transition:opacity .35s,transform .35s;z-index:2;text-shadow:0 2px 8px rgba(0,0,0,.6);pointer-events:none}
-  .gallery-item:hover .gallery-caption{opacity:1;transform:translateY(0)}
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -245,13 +243,13 @@
       <p class="section-subtitle">Interni curati, terrazze luminose e viste che tolgono il fiato.</p>
     </div>
     <div class="gallery-grid">
-      <div class="gallery-item wide tall" style="background-image:url('images/gallery-1.avif')"><span class="gallery-caption">Zona pranzo</span></div>
-      <div class="gallery-item" style="background-image:url('images/gallery-2.jpg')"><span class="gallery-caption">Camera matrimoniale</span></div>
-      <div class="gallery-item" style="background-image:url('images/gallery-3.avif')"><span class="gallery-caption">Angolo cottura</span></div>
-      <div class="gallery-item" style="background-image:url('images/gallery-4.avif')"><span class="gallery-caption">Camera da letto 2</span></div>
-      <div class="gallery-item wide" style="background-image:url('images/gallery-5.avif')"><span class="gallery-caption">Balcone panoramico</span></div>
-      <div class="gallery-item" style="background-image:url('images/gallery-6.avif')"><span class="gallery-caption">Bagno completo</span></div>
-      <div class="gallery-item" style="background-image:url('images/gallery-7.avif')"><span class="gallery-caption">Camera da letto 3</span></div>
+      <div class="gallery-item wide tall" style="background-image:url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&q=80')"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80')"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80')"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&q=80')"></div>
+      <div class="gallery-item wide" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&q=80')"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1540518614846-7eded433c457?w=600&q=80')"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80')"></div>
     </div>
   </div>
 </section>
