@@ -84,10 +84,10 @@
   .about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;padding-top:40px;border-top:1px solid rgba(0,0,0,.08)}
   .stat-number{font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--sea);font-weight:700;line-height:1}
   .stat-label{font-size:.85rem;color:var(--muted);margin-top:6px;letter-spacing:.5px}
-  .about-images{position:relative;height:560px}
-  .about-img{position:absolute;border-radius:16px;box-shadow:0 30px 60px rgba(10,46,61,.18);background-size:cover;background-position:center}
-  .about-img-1{width:75%;height:70%;top:0;left:0;background-image:url('images/piano-terra/soggiorno.avif')}
-  .about-img-2{width:60%;height:55%;bottom:0;right:0;background-image:url('images/piano-terra/dettaglio.avif');border:6px solid var(--sand)}
+  
+  
+  
+  
 
   /* ===== SERVIZI ===== */
   .features{background:var(--cream)}
@@ -218,7 +218,7 @@
     nav.scrolled .hamburger span,nav .hamburger span{background:var(--sea-deep)}
     nav:not(.scrolled) .hamburger span{background:var(--white)}
     .about-grid,.location-grid,.booking-grid{grid-template-columns:1fr;gap:40px}
-    .about-images{height:400px}
+    
     .location-map{height:380px}
     .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}
     .gallery-item.wide{grid-column:span 2}
@@ -240,6 +240,17 @@
     .map-overlay{flex-direction:column;align-items:flex-start;padding:14px}
     .map-actions{width:100%}
     .map-btn{flex:1;text-align:center}
+  }
+  .about-images{position:relative;height:640px}
+  .about-img{position:absolute;border-radius:16px;box-shadow:0 30px 60px rgba(10,46,61,.18);background-size:cover;background-position:center;z-index:1}
+  .about-img-1{width:65%;height:52%;top:0;left:0;background-image:url('images/piano-terra/soggiorno.avif')}
+  .about-img-2{width:55%;height:48%;top:6%;right:0;background-image:url('images/piano-terra/pareti.avif');border:6px solid var(--sand)}
+  .about-thumbs{position:absolute;bottom:0;left:0;right:0;height:42%;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;z-index:2}
+  .about-thumbs > div{border-radius:14px;background-size:cover;background-position:center;box-shadow:0 15px 35px rgba(10,46,61,.18);transition:transform .3s}
+  .about-thumbs > div:hover{transform:translateY(-6px)}
+  @media (max-width:960px){
+    .about-images{height:520px}
+    .about-thumbs{height:38%;gap:8px}
   }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -356,6 +367,12 @@
       <div class="about-images">
         <div class="about-img about-img-1"></div>
         <div class="about-img about-img-2"></div>
+        <div class="about-thumbs">
+          <div style="background-image:url('images/piano-terra/balcone.avif')"></div>
+          <div style="background-image:url('images/primo-piano/soggiorno.avif')"></div>
+          <div style="background-image:url('images/piano-terra/pranzo.avif')"></div>
+          <div style="background-image:url('images/piano-terra/camera-1.jpg')"></div>
+        </div>
       </div>
     </div>
   </div>
